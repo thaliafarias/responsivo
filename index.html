@@ -800,24 +800,24 @@
             <small><h5 style="color: #1ab394;">Conheça os pacotes oferecidos na nossa plataforma.</h5></small>
           </div>
           <div class="row">
-            <div class="widget col-lg-4 col-sm-4 col-md-12 col-xs-12">
-              <div class="ibox">
-               <div class="ibox-title">
-                <p class="text-right">
-                 <input type="checkbox" id="Mod_i" name="modulo" value="Mod i" onClick="comprar()">
-               </p>
-               <div class="ibox-content">
-                 <h2 class="text-center"><b>Módulo SAC</b></h2>
-               </div>
+        <div class="widget col-lg-4 col-sm-4 col-md-12 col-xs-12">
+            <div class="ibox">
+             <div class="ibox-title">
+              <p class="text-right">
+               <input type="checkbox" id="Mod_ii" name="modulo" value="Mod ii" onClick="carrinho()">
+             </p>
+             <div class="ibox-content">
+               <h2 class="text-center"><B>Módulo SAC</b></h2>
              </div>
            </div>
          </div>
+       </div>
          <div class="row">
           <div class="widget col-lg-4 col-sm-4 col-md-12 col-xs-12">
             <div class="ibox">
              <div class="ibox-title">
               <p class="text-right">
-               <input type="checkbox" id="Mod_ii" name="modulo" value="Mod ii" onClick="comprar()">
+               <input type="checkbox" id="Mod_ii" name="modulo" value="Mod ii" onClick="carrinho()">
              </p>
              <div class="ibox-content">
                <h2 class="text-center"><B>Módulo Gestão</b></h2>
@@ -830,7 +830,7 @@
             <div class="ibox">
              <div class="ibox-title">
               <p class="text-right">
-               <input type="checkbox" id="Mod_iii" name="modulo" value="Mod iii" onClick="comprar()">
+               <input type="checkbox" id="Mod_iii" name="modulo" value="Mod iii" onClick="carrinho()">
              </p>
              <div class="ibox-content">
                <h2 class="text-center"> <b>Módulo Vendas</b></h2>
@@ -838,8 +838,13 @@
            </div>
          </div>
        </div>
-
-     </div>         
+      <div class="row" id="Comprar">
+       <div class="col-lg-12 text-center fadeIn" style="visibility: visible; animation-name: FadeIn;">
+       <br><br><button class="btn btn-primary" name="comprar" onClick="comprar()">Comprar</button>
+       <p id="confirm" style="color: #1ab394;"></p>
+    </div>
+    </div>     
+  </div>         
    </div>
  </section>
       <section id="contact" class="gray-section contact">

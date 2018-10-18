@@ -1,4 +1,4 @@
-function comprar(){
+function carrinho() {
 
   var modulo = document.getElementsByName('modulo');
   for (var i = 0; i < modulo.length; i++){
@@ -16,4 +16,15 @@ function comprar(){
     }
   }
 
+}
+
+function comprar() {
+
+  var comprar 
+  if (confirm("Você tem certeza que comprar os pacotes?")) {
+    comprar = "Sua compra foi confirmada!";
+  } else {
+    comprar = "Sua compra foi cancelada!";
+  }
+  document.getElementById("confirm").innerHTML = comprar;
 }
